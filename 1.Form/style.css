@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.form-container {
+    height: 600px;
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+
+}
+
+.form__img {
+    position: relative;
+    height: 100%;
+    width: 350px;
+    background-color: gold;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.img-box {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    text-align: center;
+    padding: 0 40px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.text-box .fa-arrow-circle-right {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 40px;
+}
+
+.form__content {
+    position: relative;
+    height: 100%;
+    width: 550px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 60px 80px;
+}
+
+.form__content form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.form__content form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar input {
+    position: relative;
+
+}
+
+.fa-calendar {
+    position: absolute;
+    right: 5%;
+    color: grey;
+    font-size: 18px;
+
+}
+
+.form__content form div label {
+    width: 30%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 20px;
+}
+
+.form__content form input {
+    position: relative;
+    width: 70%;
+    height: 35px;
+    background-color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+
+}
+
+
+::placeholder {
+    padding: 5px;
+    font-size: 13px;
+}
+
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    left: 27%;
+
+}
+
+label > .fa {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    color: grey;
+}
+
+label > .fa-cc-visa,
+label > .fa-paypal,
+label > .fa-money {
+    font-size: 17px;
+    background-color: transparent;
+
+}
+
+[type=radio]:checked + label > .fa,
+{
+    color: orange;
+}
+
+
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+
+}
+
+.btn {
+    height: 100%;
+    width: 25%;
+    padding: 6px 15px;
+    margin-right: 15px;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 13px;
+
+}
+
+.btn--green {
+    background-color: mediumaquamarine;
+    color: white;
+}
+
+.btn--grey {
+    background-color: whitesmoke;
+    color: gray;
+}

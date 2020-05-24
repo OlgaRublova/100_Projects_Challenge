@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+    <div class="form__img">
+        <div class="img-box">
+            <img src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                 alt="">
+        </div>
+        <div class="text-box">
+            <h2>Let's get you set up</h2>
+            <span>It should only take a few minutes and you'll all set!</span>
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="form__content">
+        <form action="#">
+            <div>
+                <label for="name"> Name </label>
+                <input type="text" name="name" id="name" placeholder="Kendel Jefferson">
+            </div>
+            <div>
+                <label> Gender </label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male"><i class="fa fa-mars" aria-hidden="true"></i>Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female"><i class="fa fa-venus" aria-hidden="true"></i>Female</label>
+                </div>
+            </div>
+            <div class="calendar">
+                <label> Date of birth </label>
+                <input type="date" name="birth" id="birth"><i class="fa fa-calendar" aria-hidden="true"></i>
+
+            </div>
+            <div>
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" placeholder="Kendel@gmail.com">
+            </div>
+            <div>
+                <label for="mobile"> Mobile </label>
+                <input type="text" name="mobile" id="mobile" placeholder="+38 067 555 55">
+            </div>
+            <div>
+                <label for="customer"> Customer ID </label>
+                <input type="text" name="customer" id="customer" placeholder="L-43 000 000 000">
+            </div>
+            <div>
+                <label id="payment"> Payment </label>
+                <div>
+                    <input type="radio" id="visa" name="payment">
+                    <label for="visa"><i class="fa fa-cc-visa" aria-hidden="true"></i>Debit</label>
+
+
+                    <input type="radio" id="paypal" name="payment">
+                    <label for="paypal"><i class="fa fa-paypal" aria-hidden="true"></i>PayPal</label>
+
+                    <input type="radio" id="cash" name="payment">
+                    <label for="cash"><i class="fa fa-money" aria-hidden="true"></i>Cash</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn btn--grey">Cancel</button>
+                <button class="btn btn--green">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
