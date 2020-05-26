@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="checkout">
+    <div class="product-img">
+        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/kwrnu2rwsnpri1vrmwmr/air-max-torch-4-womens-shoe-67JjLN.jpg"
+             alt="">
+    </div>
+    <div class="checkout__nav">
+        <div>
+            <span>01</span>
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <span>Shipping</span>
+        </div>
+        <div>
+            <span>02</span>
+            <i class="fa fa-paypal" aria-hidden="true"></i>
+            <span>Payment</span>
+        </div>
+        <div>
+            <span>03</span>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span>Success</span>
+        </div>
+    </div>
+    <div class="checkout__details">
+        <div class="product-details">
+            <div class="price-details">
+                <p>product</p>
+                <p>quantity</p>
+                <p>price</p>
+            </div>
+            <div class="price-number">
+                <input type="number" name="number" id="number" placeholder="1">
+                <div>
+                    <small class="dollar">$</small>
+                    <span class="amount">69.99</span>
+                </div>
+            </div>
+        </div>
+        <span class="heading-style">Card type</span>
+        <span class="heading-style">Card number</span>
+        <form class="card-number" name="num">
+            <input type="text" name="number1" placeholder="XXXX" maxlength="4"
+                   onKeyup="autotab(this, document.num.number2)">
+            <input type="text" name="number2" placeholder="XXXX" maxlength="4"
+                   onKeyup="autotab(this, document.num.number3)">
+            <input type="text" name="number3" placeholder="XXXX" maxlength="4"
+                   onKeyup="autotab(this, document.num.number4)">
+            <input type="text" name="number4" placeholder="XXXX" maxlength="4"
+                   onKeyup="autotab(this, document.num.number1)">
+        </form>
+        <div class="add-card-details">
+            <div class="add-card-details__heading">
+                <span class="heading-style">Start date</span>
+                <span class="heading-style">Expire date</span>
+                <span class="heading-style">CVV</span>
+            </div>
+            <form class="add-card-details__input" name="addinfo">
+                <input type="text" name="info1" placeholder="MM/YY" maxlength="5"
+                       onKeyup="autotab(this, document.addinfo.info2)">
+                <input type="text" name="info2" placeholder="MM/YY" maxlength="5"
+                       onKeyup="autotab(this, document.addinfo.info3)">
+                <input type="text" name="info3" placeholder="XXX" maxlength="3"
+                       onKeyup="autotab(this, document.addinfo.info1)">
+            </form>
+        </div>
+        <div class="checkout-end">
+            <span><i class="fa fa-lock"></i>Check out</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    function autotab(current, to) {
+        if (current.getAttribute &&
+            current.getAttribute("maxlength") == current.value.length) {
+            to.focus()
+        }
+    }
+</script>
+<script src="index.js"></script>
+</body>
+</html>

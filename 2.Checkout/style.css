@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumvioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout {
+    height: 600px;
+    width: 800px;
+    box-shadow: 0 0 81px -18px #000000;
+    border-radius: 15px;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.product-img {
+    height: 600px;
+    width: 800px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.checkout__nav {
+    background-color: darkblue;
+    width: 180px;
+    height: 400px;
+    position: absolute;
+    left: -90px;
+    top: 100px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 81px -18px #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 30px 15px;
+
+}
+
+.checkout__nav div {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.checkout__nav div:hover {
+    color: whitesmoke;
+}
+
+
+.checkout__nav div .fa {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.checkout__details {
+    background-color: whitesmoke;
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 30px;
+    right: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 81px -18px #000000;
+
+}
+
+.checkout__details span {
+    color: blue;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.product-details {
+    width: 100%;
+    height: 200px;
+    padding: 25px 45px;
+    background-color: gainsboro;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*background-image: background-color: #FAACA8;*/
+    background-image: linear-gradient(45deg, rgba(250, 172, 168, 0.8) 0%, rgba(221, 214, 243, 0.5) 52%, rgba(255, 255, 255, 0.5) 50%), url("https://images.pexels.com/photos/2225727/pexels-photo-2225727.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+.price-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: dimgrey;
+}
+
+[type=number] {
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 20px;
+    color: brown;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: brown;
+    background-color: white;
+
+}
+
+.price-number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 60%;
+    position: absolute;
+    right: 8%;
+    top: 16%;
+
+}
+
+small.dollar {
+    vertical-align: text-top;
+    color: brown;
+}
+
+span.amount {
+    font-size: 20px;
+    color: brown;
+
+}
+
+form.card-number,
+form.add-card-details__input{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+form.card-number input,
+form.add-card-details__input input {
+    /*position: relative;*/
+    height: 30px;
+    width: 70px;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    color: crimson;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.add-card-details__heading{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heading-style {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: brown;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.add-card-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-end{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.checkout-end span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.fa-lock{
+    margin-right: 8px;
+}
+
+/*form.card-number input::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: -2px;*/
+/*    left: 0;*/
+/*    width: 70px;*/
+/*    height: 3px;*/
+/*    background-color: green;*/
+/*    !*border-bottom: 2px solid crimson;*!*/
+/*    z-index: 100;*/
+/*    !*transform: translate(-100%);*!*/
+/*    !*transition: transform 0.3s ease;*!*/
+
+/*}*/
+
+/*form label {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    !*background-color: red;*!*/
+/*    pointer-events: none;*/
+/*    border-bottom: 1px solid crimson;*/
+/*}*/
+
+/*form label::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    left: 0;*/
+/*    bottom: -1px;*/
+/*    border-bottom: 3px solid blue;*/
+/*    transform: translate(-100%);*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.content-name {*/
+/*    position: absolute;*/
+/*    !*bottom: 5px;*!*/
+/*    left: 0;*/
+/*    transition: all .3s ease;*/
+/*}*/
+
+/*form input:focus + .label-name .content-name,*/
+/*form input:valid + .label-name .content-name {*/
+/*    transform: translateY(-150%);*/
+/*}*/
+
+/*form input:focus + .label-name::after,*/
+/*form input:valid + .label-name::after {*/
+/*    transform: translateX(0%);*/
+/*}*/
+
+form.card-number input:focus,
+form.add-card-details__input input:focus{
+    border-bottom: 3px solid crimson;
+
+}
+
+form.card-number ::placeholder,
+form.add-card-details__input ::placeholder{
+    background-color: transparent;
+    color: darkgrey;
+    text-align: center;
+    letter-spacing: 2px;
+}
